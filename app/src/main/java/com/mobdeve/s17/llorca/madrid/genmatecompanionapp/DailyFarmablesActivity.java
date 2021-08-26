@@ -35,7 +35,7 @@ public class DailyFarmablesActivity extends AppCompatActivity {
     }
 
     private void generateFarmables(){
-        farmablesList = new ArrayList<>();
+        farmablesList = new ArrayList<Farmable>();
 
         ArrayList<String> DaysAvailable = new ArrayList<>();
 
@@ -63,7 +63,7 @@ public class DailyFarmablesActivity extends AppCompatActivity {
             farmablesList.add(new Farmable("Mist Veiled Elixir", R.drawable.mist_veiled_lead_elixir, DaysAvailable));
             farmablesList.add(new Farmable("Narukami", R.drawable.narukamis_wisdom, DaysAvailable));
         }
-        else if(formattedDate.equals("Wednesday") || formattedDate.equals("Saturday")){
+        else if(formattedDate.equals("Wednesday") || formattedDate.equals("Saturday")) {
             DaysAvailable.add("Wednesday");
             DaysAvailable.add("Saturday");
             farmablesList.add(new Farmable("Ballad", R.drawable.teachings_of_ballad, DaysAvailable));
@@ -73,13 +73,5 @@ public class DailyFarmablesActivity extends AppCompatActivity {
             farmablesList.add(new Farmable("Aerosiderite", R.drawable.grain_of_aerosiderite, DaysAvailable));
             farmablesList.add(new Farmable("Mask", R.drawable.mask_of_the_wicked_lieutenant, DaysAvailable));
         }
-
     }
-
-
-
-//    @Override
-//    public void onClick(View v) {
-//
-//    }
 }

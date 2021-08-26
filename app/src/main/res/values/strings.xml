@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GENMATE companion App</string>
+    <string name="resin_hint">Enter your current amount of resin here</string>
 </resources>

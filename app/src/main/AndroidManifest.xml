@@ -18,6 +18,9 @@
         </activity>
         <activity android:name=".DailyFarmablesActivity">
         </activity>
+        <activity android:name=".ResinCalculatorActivity">
+        </activity>
+        <receiver android:name=".ReminderBroadcast"></receiver>
 
     </application>
 
